@@ -44,7 +44,7 @@ namespace :mercurial do
     status = %[
       echo "-----> Using this mercurial revision" &&
       echo &&
-      #{echo_cmd %[hg log -n 1]} &&
+      #{echo_cmd %[hg log -l 1]} &&
       #{echo_cmd %[rm -rf .hg]} &&
       echo
     ]
